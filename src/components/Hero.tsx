@@ -148,6 +148,24 @@ function Hero() {
             >
               {t('hero.linkedinBtn')} ↗
             </a>
+            <a
+              href="https://github.com/niamat03"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                color: '#d6157d',
+                fontWeight: 700,
+                fontSize: '0.9rem',
+                padding: '0.9rem 2.25rem',
+                borderRadius: '0.75rem',
+                border: '1px solid rgba(214,21,125,0.35)',
+                transition: 'all 0.2s ease'
+              }}
+              onMouseEnter={e => { e.currentTarget.style.background = 'rgba(214,21,125,0.08)' }}
+              onMouseLeave={e => { e.currentTarget.style.background = 'transparent' }}
+            >
+              {t('github')} ↗
+            </a>
           </motion.div>
 
           {/* Stats */}

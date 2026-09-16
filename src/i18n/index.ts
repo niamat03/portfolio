@@ -12,6 +12,7 @@ i18n
     resources: {
       fr: {
         translation: {
+          github: 'GitHub',
           nav: {
             accueil: 'Accueil',
             about: 'À propos',
@@ -37,14 +38,14 @@ i18n
             label: 'À propos',
             heading: 'Profil professionnel',
             texte1: "Élève ingénieure en Géoinformation à la Faculté des Sciences et Techniques de Tanger (FSTT), à la recherche d'un stage PFE, spécialisée en géomatique et développement de solutions informatiques pour l'acquisition, l'analyse et la modélisation des données géospatiales.",
-            texte2: "Actuellement GIS Engineer au Conseil Régional Tanger-Tétouan-Al Hoceïma (TTA), je conçois et développe une plateforme WebGIS interactive pour le suivi et la visualisation des projets de développement régional, en intégrant SIG, technologies web et bases de données spatiales.",
+            texte2: "Actuellement ingénieure SIG au Conseil Régional Tanger-Tétouan-Al Hoceïma (TTA) dans le cadre d'un stage PFA, je conçois et mets en place l'ORVSIT, un observatoire géospatial pour le suivi, l'analyse et l'aide à la prise de décision des projets PDR de développement régional, en intégrant SIG, technologies web et bases de données spatiales.",
             texte3: "Intéressée par le domaine de la géomatique et le développement d'applications modernes, je cherche à combiner les technologies web et mobile avec les outils SIG.",
             competencesLabel: 'Compétences transversales',
             skills: ['Leadership', "Travail d'équipe", 'Communication', 'Gestion de projet', 'Club Géoinformation'],
             experienceLabel: 'Expérience',
-            job1Title: 'GIS Engineer',
+            job1Title: 'Ingénieure SIG — Stage PFA',
             job1Place: 'Conseil Régional Tanger-Tétouan-Al Hoceïma (TTA) — depuis juillet 2026',
-            job1Desc: "Conception et développement d'une plateforme WebGIS interactive pour le suivi et la visualisation des projets de développement régional.",
+            job1Desc: "Conception et mise en place de l'ORVSIT (Observatoire Régional de la Veille Stratégique et de l'Intelligence Territoriale), un observatoire géospatial pour le suivi, l'analyse et l'aide à la prise de décision des projets PDR de développement régional.",
             job2Title: 'Ingénieure Géomètre Topographe',
             job2Place: "Agence Urbaine de Tétouan — Stage d'été 2025",
             labelUniversite: 'Université',
@@ -57,8 +58,6 @@ i18n
             valueLangues: 'Arabe · Français · Anglais'
           },
           skills: {
-            label: 'Compétences',
-            heading: 'Expertises techniques',
             cat1: 'SIG & Télédétection',
             cat2: 'Programmation',
             cat3: 'Web Mapping',
@@ -98,7 +97,6 @@ i18n
             p4Desc: "Interface graphique dédiée aux calculs géodésiques : distances, coordonnées et transformations.",
             p5Desc: "Plateforme web cartographique de réservation pour la Coupe d'Afrique des Nations 2025 avec localisation des stades.",
             p6Desc: "Suivi de l'expansion urbaine du Grand Tanger entre 2017 et 2026 par classification Random Forest sur imagerie satellite Sentinel-2, dans le cadre d'un mini-projet Géo-IA et Big Data.",
-            p7Desc: "Jeu de dames complet développé en Java avec interface graphique, gestion des règles, des tours de jeu et des prises multiples.",
             p8Desc: "Réseau social avec découverte géospatiale : publications à proximité, carte interactive, messagerie privée et notifications, propulsé par Django et PostGIS.",
             p9Desc: "Plateforme web de gestion de projet : suivi des tâches, organisation d'équipe et tableaux de bord collaboratifs.",
             p10Desc: "Marketplace e-commerce full-stack multi-catégories avec panier, paiement PayPal et gestion des commandes."
@@ -130,6 +128,7 @@ i18n
       },
       en: {
         translation: {
+          github: 'GitHub',
           nav: {
             accueil: 'Home',
             about: 'About',
@@ -155,14 +154,14 @@ i18n
             label: 'About',
             heading: 'Professional profile',
             texte1: 'Geoinformation Engineering trainee at the Faculty of Sciences and Techniques of Tangier (FSTT), currently looking for a final-year internship (PFE), specialized in geomatics and the development of software solutions for the acquisition, analysis and modeling of geospatial data.',
-            texte2: 'Currently a GIS Engineer at the Tangier-Tetouan-Al Hoceima Regional Council (TTA), I design and develop an interactive WebGIS platform for monitoring and visualizing regional development projects, integrating GIS, web technologies and spatial databases.',
+            texte2: 'Currently a GIS Engineer at the Tangier-Tetouan-Al Hoceima Regional Council (TTA) as part of a PFA internship, I design and implement the ORVSIT, a geospatial observatory for monitoring, analyzing and supporting decision-making on PDR regional development projects, integrating GIS, web technologies and spatial databases.',
             texte3: 'Interested in the field of geomatics and modern application development, I aim to combine web and mobile technologies with GIS tools.',
             competencesLabel: 'Transversal skills',
             skills: ['Leadership', 'Teamwork', 'Communication', 'Project management', 'Geoinformation Club'],
             experienceLabel: 'Experience',
-            job1Title: 'GIS Engineer',
+            job1Title: 'GIS Engineer — PFA Internship',
             job1Place: 'Tangier-Tetouan-Al Hoceima Regional Council (TTA) — since July 2026',
-            job1Desc: 'Design and development of an interactive WebGIS platform for monitoring and visualizing regional development projects.',
+            job1Desc: 'Design and implementation of the ORVSIT (Regional Observatory for Strategic Watch and Territorial Intelligence), a geospatial observatory for monitoring, analyzing and supporting decision-making on PDR regional development projects.',
             job2Title: 'Surveying Engineer',
             job2Place: 'Urban Agency of Tetouan — Summer internship 2025',
             labelUniversite: 'University',
@@ -175,8 +174,6 @@ i18n
             valueLangues: 'Arabic · French · English'
           },
           skills: {
-            label: 'Skills',
-            heading: 'Technical expertise',
             cat1: 'GIS & Remote Sensing',
             cat2: 'Programming',
             cat3: 'Web Mapping',
@@ -216,7 +213,6 @@ i18n
             p4Desc: 'Graphical interface dedicated to geodetic calculations: distances, coordinates and transformations.',
             p5Desc: 'Web mapping reservation platform for the 2025 Africa Cup of Nations with stadium locations.',
             p6Desc: 'Monitoring urban expansion of Greater Tangier between 2017 and 2026 using Random Forest classification on Sentinel-2 satellite imagery, as part of a Geo-AI and Big Data mini-project.',
-            p7Desc: 'Full checkers (draughts) game built in Java with a graphical interface, rule enforcement, turn management and multi-capture logic.',
             p8Desc: 'Social media platform with geospatial discovery: nearby posts, an interactive map, private messaging and notifications, powered by Django and PostGIS.',
             p9Desc: 'Web-based project management platform: task tracking, team organization and collaborative dashboards.',
             p10Desc: 'Full-stack multi-category e-commerce marketplace with shopping cart, PayPal checkout and order management.'
@@ -248,6 +244,7 @@ i18n
       },
       ar: {
         translation: {
+          github: 'GitHub',
           nav: {
             accueil: 'الرئيسية',
             about: 'من أنا',
@@ -273,14 +270,14 @@ i18n
             label: 'من أنا',
             heading: 'الملف المهني',
             texte1: 'طالبة مهندسة متدربة في المعلومات الجغرافية بكلية العلوم والتقنيات بطنجة (FSTT)، تبحث حالياً عن تدريب نهاية الدراسات (PFE)، متخصصة في الجيوماتيك وتطوير حلول برمجية لجمع البيانات الجغرافية المكانية وتحليلها ونمذجتها.',
-            texte2: 'أعمل حالياً كمهندسة نظم معلومات جغرافية بالمجلس الجهوي لطنجة تطوان الحسيمة (TTA)، حيث أقوم بتصميم وتطوير منصة ويب جغرافية تفاعلية لمتابعة وتصور مشاريع التنمية الجهوية، من خلال دمج نظم المعلومات الجغرافية وتقنيات الويب وقواعد البيانات المكانية.',
+            texte2: 'أعمل حالياً كمهندسة نظم معلومات جغرافية بالمجلس الجهوي لطنجة تطوان الحسيمة (TTA) في إطار تدريب PFA، حيث أقوم بتصميم وإرساء ORVSIT، وهو مرصد جغرافي مكاني لمتابعة وتحليل مشاريع البرنامج التنموي الجهوي (PDR) ودعم اتخاذ القرار بشأنها، من خلال دمج نظم المعلومات الجغرافية وتقنيات الويب وقواعد البيانات المكانية.',
             texte3: 'مهتمة بمجال الجيوماتيك وتطوير التطبيقات الحديثة، أسعى إلى الجمع بين تقنيات الويب والموبايل وأدوات نظم المعلومات الجغرافية.',
             competencesLabel: 'مهارات شخصية',
             skills: ['القيادة', 'العمل الجماعي', 'التواصل', 'إدارة المشاريع', 'نادي المعلومات الجغرافية'],
             experienceLabel: 'الخبرة المهنية',
-            job1Title: 'مهندسة نظم معلومات جغرافية',
+            job1Title: 'مهندسة نظم معلومات جغرافية — تدريب PFA',
             job1Place: 'المجلس الجهوي لطنجة تطوان الحسيمة (TTA) — منذ يوليوز 2026',
-            job1Desc: 'تصميم وتطوير منصة ويب جغرافية تفاعلية لمتابعة وتصور مشاريع التنمية الجهوية.',
+            job1Desc: 'تصميم وإرساء ORVSIT (المرصد الجهوي لليقظة الاستراتيجية والذكاء الترابي)، وهو مرصد جغرافي مكاني لمتابعة وتحليل مشاريع البرنامج التنموي الجهوي (PDR) ودعم اتخاذ القرار بشأنها.',
             job2Title: 'مهندسة طوبوغرافية',
             job2Place: 'الوكالة الحضرية لتطوان — تدريب صيفي 2025',
             labelUniversite: 'الجامعة',
@@ -293,8 +290,6 @@ i18n
             valueLangues: 'العربية · الفرنسية · الإنجليزية'
           },
           skills: {
-            label: 'المهارات',
-            heading: 'الخبرات التقنية',
             cat1: 'نظم المعلومات الجغرافية والاستشعار عن بعد',
             cat2: 'البرمجة',
             cat3: 'خرائط الويب',
@@ -334,7 +329,6 @@ i18n
             p4Desc: 'واجهة رسومية مخصصة للحسابات الجيوديزية: المسافات والإحداثيات والتحويلات.',
             p5Desc: 'منصة ويب جغرافية للحجز الخاصة بكأس أمم أفريقيا 2025 مع تحديد مواقع الملاعب.',
             p6Desc: 'رصد التوسع العمراني لجهة طنجة الكبرى بين 2017 و2026 باستخدام تصنيف الغابة العشوائية (Random Forest) على صور الأقمار الصناعية Sentinel-2، في إطار مشروع مصغر في الذكاء الاصطناعي الجغرافي والبيانات الضخمة.',
-            p7Desc: 'لعبة الضامة كاملة مطورة بلغة جافا مع واجهة رسومية، وإدارة للقواعد والأدوار والأكل المتعدد.',
             p8Desc: 'منصة تواصل اجتماعي مع اكتشاف جغرافي: منشورات قريبة، خريطة تفاعلية، رسائل خاصة وإشعارات، مبنية بـ Django وPostGIS.',
             p9Desc: 'منصة ويب لإدارة المشاريع: تتبع المهام، تنظيم الفريق ولوحات تحكم تعاونية.',
             p10Desc: 'متجر إلكتروني متعدد الفئات متكامل مع سلة تسوق، دفع عبر PayPal وإدارة الطلبات.'

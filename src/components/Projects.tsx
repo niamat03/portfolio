@@ -5,7 +5,6 @@ import { useTheme } from '../context/ThemeContext'
 import geoAssistImg from '../assets/geoassist-plugin.jpeg'
 import ticketPlatformImg from '../assets/ticket-platform.png'
 import geoCalcImg from '../assets/calcul geodesique.png'
-import jeuDeDamesImg from '../assets/jeu de dames.jpeg'
 import expansionUrbaineImg from '../assets/expansion urbaine Tanger .png'
 import socialMediaImg from '../assets/social media platforme.png'
 import ecommerceImg from '../assets/ecommerce.png'
@@ -20,8 +19,7 @@ const projects = [
   { id: 4, title: 'Application Calcul Géodésique', categoryKey: 'catGeodesie', descKey: 'p4Desc', technologies: ['PyQt6', 'Python'], github: 'https://github.com/niamat03/plateforme-calcul-geodesique', image: geoCalcImg },
   { id: 8, title: 'Plateforme Social Media Géolocalisée', categoryKey: 'catWebsig', descKey: 'p8Desc', technologies: ['Django', 'PostgreSQL', 'PostGIS'], github: 'https://github.com/niamat03/social-media', image: socialMediaImg },
   { id: 9, title: 'Selena — Plateforme de Gestion de Projet', categoryKey: 'catDev', descKey: 'p9Desc', technologies: ['TypeScript', 'React', 'Node.js'], github: 'https://github.com/niamat03/project-management-platform', image: selenaImg },
-  { id: 10, title: 'Marketplace E-commerce Multi-catégories', categoryKey: 'catDev', descKey: 'p10Desc', technologies: ['Node.js', 'Express', 'PostgreSQL', 'PayPal'], github: 'https://github.com/niamat03/ecommerce-store', image: ecommerceImg },
-  { id: 7, title: 'Jeu de Dames', categoryKey: 'catDev', descKey: 'p7Desc', technologies: ['Java', 'Swing'], github: 'https://github.com/niamat03/jeu-de-dames-java', image: jeuDeDamesImg }
+  { id: 10, title: 'Marketplace E-commerce Multi-catégories', categoryKey: 'catDev', descKey: 'p10Desc', technologies: ['Node.js', 'Express', 'PostgreSQL', 'PayPal'], github: 'https://github.com/niamat03/ecommerce-store', image: ecommerceImg }
 ]
 
 const categoryKeys = ['filterAll', 'catWebsig', 'catTeledetection', 'catAnalyse', 'catGeodesie', 'catDev']
