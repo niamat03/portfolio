@@ -1,0 +1,202 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #d6157d;
+  --primary-hover: #af1267;
+  --primary-glow: rgba(214, 21, 125, 0.15);
+  --dark-bg: #080c14;
+  --dark-surface: #0d1117;
+  --dark-card: #111827;
+  --dark-card2: #161e2e;
+  --dark-border: #1f2937;
+  --dark-border2: #2d3748;
+  --light-bg: #ffffff;
+  --light-surface: #ffffff;
+  --light-card: #ffffff;
+  --light-border: #e4e4e7;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+.container-xl {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1.5rem, 5vw, 5rem);
+  padding-right: clamp(1.5rem, 5vw, 5rem);
+}
+
+.section-spacing {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.text-display {
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 900;
+  line-height: 1.0;
+  letter-spacing: -0.03em;
+}
+
+.text-heading {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.text-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+/* Grid géographique en arrière-plan */
+.geo-grid {
+  background-image:
+    linear-gradient(rgba(214,21,125,0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(214,21,125,0.07) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.geo-grid-light {
+  background-image:
+    linear-gradient(rgba(214,21,125,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(214,21,125,0.05) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Glow effect */
+.glow-dot {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #080c14; }
+::-webkit-scrollbar-thumb { background: #d6157d; border-radius: 2px; }
+
+/* Starfield background */
+.starfield {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: #080c14;
+}
+
+.star-nebula {
+  position: absolute;
+  inset: -20%;
+  background:
+    radial-gradient(circle at 15% 12%, rgba(214,21,125,0.16), transparent 32%),
+    radial-gradient(circle at 85% 25%, rgba(88,60,255,0.14), transparent 35%),
+    radial-gradient(circle at 50% 85%, rgba(21,180,214,0.08), transparent 40%);
+  filter: blur(40px);
+}
+
+.star-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.star-layer-2 { top: -2000px; }
+
+.star-small { animation: star-drift 160s linear infinite; opacity: 0.75; }
+.star-medium { width: 2px; height: 2px; animation: star-drift 110s linear infinite, star-twinkle 4.5s ease-in-out infinite alternate; }
+.star-large {
+  width: 3px;
+  height: 3px;
+  box-shadow: 0 0 4px 1px rgba(255,255,255,0.5);
+  animation: star-drift 70s linear infinite, star-twinkle 3.2s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes star-drift {
+  from { transform: translateY(0); }
+  to { transform: translateY(2000px); }
+}
+
+@keyframes star-twinkle {
+  from { opacity: 0.35; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .star-layer { animation: none !important; }
+}
+
+/* Light mode — geo/map background */
+.geo-field {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: #ffffff;
+}
+
+.geo-field-glow {
+  position: absolute;
+  inset: -20%;
+  background:
+    radial-gradient(circle at 12% 8%, rgba(214,21,125,0.08), transparent 30%),
+    radial-gradient(circle at 88% 20%, rgba(21,120,214,0.06), transparent 34%),
+    radial-gradient(circle at 50% 90%, rgba(214,21,125,0.05), transparent 38%);
+  filter: blur(50px);
+}
+
+.geo-field-grid {
+  position: absolute;
+  inset: -60px;
+  background-image:
+    linear-gradient(rgba(214,21,125,0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(214,21,125,0.07) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: geo-drift 90s linear infinite;
+}
+
+.geo-field-dots {
+  position: absolute;
+  inset: -60px;
+  background-image: radial-gradient(rgba(214,21,125,0.16) 1.5px, transparent 1.5px);
+  background-size: 60px 60px;
+  background-position: -0.5px -0.5px;
+  animation: geo-drift 90s linear infinite;
+}
+
+@keyframes geo-drift {
+  from { transform: translate(0, 0); }
+  to { transform: translate(-60px, -60px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .geo-field-grid, .geo-field-dots { animation: none !important; }
+}
+
+/* Card hover */
+.card-hover {
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  border-color: rgba(214,21,125,0.3) !important;
+  box-shadow: 0 12px 40px rgba(214,21,125,0.1);
+}
